@@ -22,8 +22,8 @@ node-stanford-simple-nlp depends on [Stanford CoreNLP](http://nlp.stanford.edu/s
 ## Configuration
 ```javascript
 var NLP = require('stanford-corenlp');
-
-var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.4"},function(err) {});
+var config = {"nlpPath":"./corenlp","version":"3.4"};
+var coreNLP = new NLP.StanfordNLP(config);
 ```
 
 ## Usage
