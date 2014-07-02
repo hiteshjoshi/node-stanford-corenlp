@@ -16,7 +16,7 @@ node-stanford-simple-nlp depends on [Stanford CoreNLP](http://nlp.stanford.edu/s
 
     $ npm install stanford-corenlp
 
-**Important!** You should download `stanford-corenlp-full-2014-01-04.zip` file and unzip to a folder and provide the path in the configuration. You can download the file from [here](http://www-nlp.stanford.edu/software/stanford-corenlp-full-2014-01-04.zip). This file couldn't be pushed to github & npm because of its too big size(about 214MB).
+**Important!** You should download `stanford-corenlp-full-2014-06-16.zip` file and unzip to a folder and provide the path in the configuration. You can download the file from [here](http://nlp.stanford.edu/software/stanford-corenlp-full-2014-06-16.zip).
 
 
 ## Configuration
