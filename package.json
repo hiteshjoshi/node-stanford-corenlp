@@ -1,16 +1,12 @@
 {
   "name": "stanford-corenlp",
   "version": "0.2.2",
-  "author": {
-    "name": "Hitesh Joshi",
-    "email": "me@hiteshjoshi.com"
-  },
+  "author": "Hitesh Joshi <me@hiteshjoshi.com>",
   "main": "index",
   "dependencies": {
     "java": "~0.2.4",
     "xml2js": "~0.2.8"
   },
-  "readmeFilename": "README.md",
   "description": "A simple node.js wrapper for Stanford CoreNLP.",
   "repository": {
     "type": "git",
@@ -27,6 +23,13 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script --require coffee-script/register --globals lw --recursive ./test -t 100000"
-  }
+    "test": "make test"
+  },
+  "homepage": "https://github.com/hiteshjoshi/node-stanford-corenlp",
+  "keywords": [
+    "nlp",
+    "corenlp",
+    "language"
+  ],
+  "license": "ISC"
 }
