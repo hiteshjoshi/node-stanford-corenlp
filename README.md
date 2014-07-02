@@ -23,7 +23,7 @@ node-stanford-simple-nlp depends on [Stanford CoreNLP](http://nlp.stanford.edu/s
 ```javascript
 var NLP = require('stanford-corenlp');
 
-var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp"},function(err) {});
+var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.4"},function(err) {});
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp"},function(err) {});
 ```javascript
 var NLP = require('stanford-corenlp');
 
-var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp"},function(err) {
+var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.4"},function(err) {
   coreNLP.process('This is so good.', function(err, result) {
     console.log(err,JSON.stringify(result));
   });
@@ -43,7 +43,7 @@ var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp"},function(err) {
 ```javascript
 var NLP = require('stanford-corenlp');
 
-var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp"});
+var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.4"});
 coreNLP.loadPipelineSync();
 coreNLP.process('This is so good.', function(err, result) {
   console.log(err,JSON.stringify(result));
