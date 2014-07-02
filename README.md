@@ -12,7 +12,7 @@ The Stanford CoreNLP code is written in Java and licensed under the GNU General 
 
 ## Installation
 
-node-stanford-simple-nlp depends on [Standord CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml) v3.3.1. And don't forget to [set proper environment variables](https://github.com/nearinfinity/node-java) like `JAVA_HOME` in your system.
+node-stanford-simple-nlp depends on [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml) v3.3.1. And don't forget to [set proper environment variables](https://github.com/nearinfinity/node-java) like `JAVA_HOME` in your system.
 
     $ npm install stanford-corenlp
 
@@ -21,19 +21,19 @@ node-stanford-simple-nlp depends on [Standord CoreNLP](http://nlp.stanford.edu/s
 
 ## Configuration
 ```javascript
-var StanfordSimpleNLP = require('stanford-corenlp');
+var NLP = require('stanford-corenlp');
 
-var stanfordSimpleNLP = new StanfordSimpleNLP.StanfordSimpleNLP({"nlpPath":"./corenlp"},function(err) {});
+var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp"},function(err) {});
 ```
 
 ## Usage
 
 #### Async mode
 ```javascript
-var StanfordSimpleNLP = require('stanford-corenlp');
+var NLP = require('stanford-corenlp');
 
-var stanfordSimpleNLP = new StanfordSimpleNLP.StanfordSimpleNLP({"nlpPath":"./corenlp"},function(err) {
-  stanfordSimpleNLP.process('This is so good.', function(err, result) {
+var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp"},function(err) {
+  coreNLP.process('This is so good.', function(err, result) {
     console.log(err,JSON.stringify(result));
   });
 });
@@ -41,11 +41,11 @@ var stanfordSimpleNLP = new StanfordSimpleNLP.StanfordSimpleNLP({"nlpPath":"./co
 
 #### Sync mode
 ```javascript
-var StanfordSimpleNlp = require('stanford-corenlp');
+var NLP = require('stanford-corenlp');
 
-var stanfordSimpleNLP = new StanfordSimpleNLP.StanfordSimpleNLP({"nlpPath":"./corenlp"});
-stanfordSimpleNLP.loadPipelineSync();
-stanfordSimpleNLP.process('This is so good.', function(err, result) {
+var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp"});
+coreNLP.loadPipelineSync();
+coreNLP.process('This is so good.', function(err, result) {
   console.log(err,JSON.stringify(result));
 });
 ```
