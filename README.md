@@ -1,4 +1,4 @@
-# node-stanford-simple-nlp
+# node-stanford-corenlp
 
 A simple node.js wrapper for Stanford CoreNLP.
 
@@ -18,7 +18,7 @@ Will update this section soon.
 
 #### Async mode
 ```javascript
-var StanfordSimpleNLP = require('stanford-simple-nlp');
+var StanfordSimpleNLP = require('stanford-corenlp');
 
 var stanfordSimpleNLP = new StanfordSimpleNLP.StanfordSimpleNLP( function(err) {
   stanfordSimpleNLP.process('This is so good.', function(err, result) {
@@ -29,7 +29,7 @@ var stanfordSimpleNLP = new StanfordSimpleNLP.StanfordSimpleNLP( function(err) {
 
 #### Sync mode
 ```javascript
-var StanfordSimpleNlp = require('stanford-simple-nlp');
+var StanfordSimpleNlp = require('stanford-corenlp');
 
 var stanfordSimpleNLP = new StanfordSimpleNLP.StanfordSimpleNLP();
 stanfordSimpleNLP.loadPipelineSync();
@@ -58,6 +58,3 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Author: Hitesh Joshi (me@hiteshjoshi.com). Copyright 2013~2014.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/xissy/node-stanford-simple-nlp/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
