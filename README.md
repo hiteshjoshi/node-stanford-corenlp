@@ -18,6 +18,7 @@ node-stanford-simple-nlp depends on [Stanford CoreNLP](http://nlp.stanford.edu/s
 
 **Important!** You should download `stanford-corenlp-full-2014-06-16.zip` file and unzip to a folder and provide the path in the configuration. You can download the file from [here](http://nlp.stanford.edu/software/stanford-corenlp-full-2014-06-16.zip).
 
+PS : (Use Java 1.8 for corenlp 3.5.0+ )
 
 ## Configuration
 ```javascript
@@ -51,6 +52,13 @@ coreNLP.process('This is so good.', function(err, result) {
 ```
 
 **Warning!** If you didn't initialize the class without callback function then you will meet `'Load a pipeline first.'` error. So you have to do it with callback function or call `loadPipeline(options, callback)` function seperately.
+
+#### Errors
+If you are getting error 
+Error: Could not create class edu.stanford.nlp.pipeline.StanfordCoreNLP
+java.lang.UnsupportedClassVersionError: edu/stanford/nlp/pipeline/StanfordCoreNLP : Unsupported major.minor version 52.0
+
+That's possibly the class was compiled with a version different than what node-java is using. When you compiled node-java was your java home the same?
 
 
 ## License
