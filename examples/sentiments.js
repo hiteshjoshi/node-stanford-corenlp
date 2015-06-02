@@ -1,11 +1,15 @@
 var NLP = require('../');
 var path = require('path');
 
-var config = {'nlpPath':path.join ( __dirname,'./../corenlp'),'version':'3.5.2'};
+var config = {
+
+	'nlpPath':path.join ( __dirname,'./../corenlp'), //the path of corenlp
+	'version':'3.5.2', //what version of corenlp are you using
+	'annotators': ['tokenize', 'ssplit', 'pos', 'lemma', 'ner', 'parse', 'dcoref'] //optional!
+
+};
 
 var coreNLP = new NLP.StanfordNLP(config);
-coreNLP.loadPipelineSync();
-
 
 var http = require('http');
 var url = require('url');
