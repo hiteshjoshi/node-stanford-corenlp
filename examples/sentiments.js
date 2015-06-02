@@ -16,7 +16,7 @@ var server = http.createServer(function (request, response) {
 
   if (queryData.name) {
     
-    coreNLP.process(queryData, function(err, result) {
+    coreNLP.process(queryData.q, function(err, result) {
 	    if(err)
 	    	throw err;
 	    else
