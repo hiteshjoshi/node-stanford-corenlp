@@ -10,10 +10,10 @@
   "description": "A simple node.js wrapper for Stanford CoreNLP.",
   "repository": {
     "type": "git",
-    "url": "https://github.com:hiteshjoshi/node-stanford-corenlp"
+    "url": "https://github.com/hiteshjoshi/node-stanford-corenlp.git"
   },
   "bugs": {
-    "url": "https://github.com:hiteshjoshi/node-stanford-corenlp/issues"
+    "url": "https://github.com/hiteshjoshi/node-stanford-corenlp/issues"
   },
   "devDependencies": {
     "should": "~1.2.2",
