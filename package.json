@@ -4,8 +4,8 @@
   "author": "Hitesh Joshi <me@hiteshjoshi.com>",
   "main": "index",
   "dependencies": {
-    "java": "~0.4.4",
-    "xml2js": "~0.2.8"
+    "java": "^0.5.4",
+    "xml2js": "~0.4.9"
   },
   "description": "A simple node.js wrapper for Stanford CoreNLP.",
   "repository": {

@@ -1,3 +1,6 @@
+### NOTE
+Examples are coming soon. Installation is easy enough for you to understand though.
+
 # node-stanford-corenlp
 
 A simple node.js wrapper for Stanford CoreNLP.
