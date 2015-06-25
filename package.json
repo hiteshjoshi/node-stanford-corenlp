@@ -1,6 +1,6 @@
 {
   "name": "stanford-corenlp",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Hitesh Joshi <me@hiteshjoshi.com>",
   "main": "index",
   "dependencies": {
@@ -10,7 +10,7 @@
   "description": "A simple node.js wrapper for Stanford CoreNLP.",
   "repository": {
     "type": "git",
-    "url": "https://github.com:hiteshjoshi/node-stanford-corenlp"
+    "url": "git+https://github.com/%3Ahiteshjoshi/node-stanford-corenlp.git"
   },
   "bugs": {
     "url": "https://github.com:hiteshjoshi/node-stanford-corenlp/issues"
@@ -20,6 +20,7 @@
     "mocha": "~1.12.0"
   },
   "directories": {
+    "example": "examples",
     "test": "test"
   },
   "scripts": {
