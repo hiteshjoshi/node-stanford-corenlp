@@ -1,4 +1,4 @@
-var NLP = require('stanford-corenlp');
+var NLP = require('./../../');
 var path = require('path');
 
 var config = {
