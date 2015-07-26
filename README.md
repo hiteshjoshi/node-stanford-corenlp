@@ -1,3 +1,6 @@
+# node-stanford-corenlp
+A simple node.js wrapper for Stanford CoreNLP.
+
 ### Quick Demo
 * Download [corenlp-3.5.2](http://nlp.stanford.edu/software/stanford-corenlp-full-2015-04-20.zip) ![Download 3.5.2](http://i.imgur.com/vZS62uy.png)
 * Extract the content of standford-corenlp-full-2015-04-20 to corenlp directory in the root directory
@@ -5,9 +8,6 @@
 * Go to [Localhost:8990](http://localhost:8990/?q=There%20are%20slow%20and%20repetitive%20parts,%20but%20it%20has%20just%20enough%20spice%20to%20keep%20it%20interesting.)
 ----
 
-# node-stanford-corenlp
-
-A simple node.js wrapper for Stanford CoreNLP.
 
 #### What is Stanford CoreNLP?
 Stanford CoreNLP provides a set of natural language analysis tools which can take raw English language text input and give the base forms of words, their parts of speech, whether they are names of companies, people, etc., normalize dates, times, and numeric quantities, and mark up the structure of sentences in terms of phrases and word dependencies, and indicate which noun phrases refer to the same entities. Stanford CoreNLP is an integrated framework, which make it very easy to apply a bunch of language analysis tools to a piece of text. Starting from plain text, you can run all the tools on it with just two lines of code. Its analyses provide the foundational building blocks for higher-level and domain-specific text understanding applications.
