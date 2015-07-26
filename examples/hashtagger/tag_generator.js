@@ -1,10 +1,9 @@
 var NLP = require('./../../');
 var path = require('path');
-
+console.log(path.join ( __dirname,'/../../corenlp'))
 var config = {
-  //NOTE: path should be in config file
-	'nlpPath':path.join ( __dirname,'./stanford-corenlp-full-2014-06-16'), //the path of corenlp
-	'version':'3.4', //what version of corenlp are you using
+	'nlpPath':path.join ( __dirname,'/../../corenlp'), //the path of corenlp
+	'version':'3.5.2	', //what version of corenlp are you using
 	'annotators': ['tokenize', 'ssplit', 'pos', 'lemma', 'ner', 'parse'] //optional!
 
 };
