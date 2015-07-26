@@ -1,6 +1,6 @@
 {
   "name": "stanford-corenlp",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "author": "Hitesh Joshi <me@hiteshjoshi.com>",
   "main": "index",
   "dependencies": {
