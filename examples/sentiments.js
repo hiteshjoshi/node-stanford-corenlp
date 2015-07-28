@@ -7,7 +7,7 @@ var config = {
 	'version':'3.5.2', //what version of corenlp are you using
 	'annotators': ['tokenize','ssplit','pos','parse','sentiment','depparse','quote'], //optional!
 	'extra' : {
-      'depparse.extradependencie': 'SUBJ_ONLY'
+      'depparse.extradependencie': 'MAXIMAL'
     }
 
 };
@@ -33,7 +33,7 @@ var server = http.createServer(function (request, response) {
     
 
   } else {
-    response.end("Hello standford-coreNLP!\n");
+    response.end("Hello!\n");
   }
 });
 
