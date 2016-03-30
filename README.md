@@ -2,10 +2,10 @@
 A simple node.js wrapper for Stanford CoreNLP.
 
 ### Quick Demo
-* Download [corenlp-3.5.2](http://nlp.stanford.edu/software/stanford-corenlp-full-2015-04-20.zip) ![Download 3.5.2](http://i.imgur.com/vZS62uy.png)
+* Download [corenlp-3.6.0](http://nlp.stanford.edu/software/stanford-corenlp-full-2015-12-09.zip) ![Download 3.6.0](http://i.imgur.com/vZS62uy.png)
 * Extract the content of **standford-corenlp-full-2015-04-20.zip** to ***corenlp*** directory in the root directory of this project
 * Run ``` node examples/sentiments.js ```
-* Go to [Localhost:8990](http://localhost:8990/?q=There%20are%20slow%20and%20repetitive%20parts,%20but%20it%20has%20just%20enough%20spice%20to%20keep%20it%20interesting.)
+* Go to [http://localhost:8990](http://localhost:8990/?q=There%20are%20slow%20and%20repetitive%20parts,%20but%20it%20has%20just%20enough%20spice%20to%20keep%20it%20interesting.)
 
 ----
 
@@ -20,7 +20,7 @@ The Stanford CoreNLP code is written in Java and licensed under the GNU General 
 
 ## Installation
 
-node-stanford-simple-nlp depends on [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml) v3.4. And don't forget to [set proper environment variables](https://github.com/nearinfinity/node-java) like `JAVA_HOME` in your system.
+node-stanford-simple-nlp depends on [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml) v3.4+. And don't forget to [set proper environment variables](https://github.com/nearinfinity/node-java) like `JAVA_HOME` in your system.
 
     $ npm install stanford-corenlp
 
@@ -31,7 +31,7 @@ PS : (Use Java 1.8 for corenlp 3.5.0+ )
 ## Configuration
 ```javascript
 var NLP = require('stanford-corenlp');
-var config = {"nlpPath":"./corenlp","version":"3.4"};
+var config = {"nlpPath":"./corenlp","version":"3.6.0"};
 var coreNLP = new NLP.StanfordNLP(config);
 ```
 
@@ -41,7 +41,17 @@ var coreNLP = new NLP.StanfordNLP(config);
 ```javascript
 var NLP = require('stanford-corenlp');
 
-var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.4"},function(err) {
+var coreNLP = new NLP.StanfordNLP({
+
+	"nlpPath":"./corenlp",
+	"version":"3.6.0",
+	//you can skip language if you want to use default english.
+	"language":{
+		"jar":"./corenlp/stanford-chinese-corenlp-2014-02-24-models.jar",
+		"properties":"./corenlp/StanfordCoreNLP-chinese.properties"
+	}
+
+},function(err) {
   coreNLP.process('This is so good.', function(err, result) {
     console.log(err,JSON.stringify(result));
   });
@@ -52,7 +62,7 @@ var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.4"},functi
 ```javascript
 var NLP = require('stanford-corenlp');
 
-var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.4"});
+var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.6.0"});
 coreNLP.loadPipelineSync();
 coreNLP.process('This is so good.', function(err, result) {
   console.log(err,JSON.stringify(result));

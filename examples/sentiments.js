@@ -8,7 +8,12 @@ var config = {
 	'annotators': ['tokenize','ssplit','pos','parse','sentiment','depparse','quote'], //optional!
 	'extra' : {
       'depparse.extradependencie': 'MAXIMAL'
-    }
+    },
+
+    'language': {
+     'jar': path.join ( __dirname,'./../corenlp/stanford-chinese-corenlp-2014-02-24-models.jar'),
+     'properties': path.join ( __dirname,'./../corenlp/StanfordCoreNLP-chinese.properties')
+   }
 
 };
 
