@@ -58,8 +58,6 @@ var coreNLP = new NLP.StanfordNLP({
 });
 ```
 
-**Warning!** If you didn't initialize the class without callback function then you will meet `'Load a pipeline first.'` error. So you have to do it with callback function or call `loadPipeline(options, callback)` function seperately.
-
 #### Errors
 If you are getting error 
 Error: Could not create class edu.stanford.nlp.pipeline.StanfordCoreNLP
