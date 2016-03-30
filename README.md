@@ -58,17 +58,6 @@ var coreNLP = new NLP.StanfordNLP({
 });
 ```
 
-#### Sync mode
-```javascript
-var NLP = require('stanford-corenlp');
-
-var coreNLP = new NLP.StanfordNLP({"nlpPath":"./corenlp","version":"3.6.0"});
-coreNLP.loadPipelineSync();
-coreNLP.process('This is so good.', function(err, result) {
-  console.log(err,JSON.stringify(result));
-});
-```
-
 **Warning!** If you didn't initialize the class without callback function then you will meet `'Load a pipeline first.'` error. So you have to do it with callback function or call `loadPipeline(options, callback)` function seperately.
 
 #### Errors
