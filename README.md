@@ -1,5 +1,7 @@
 # node-stanford-corenlp
 
+## Not maintained any longer.
+
 [![Join the chat at https://gitter.im/hiteshjoshi/node-stanford-corenlp](https://badges.gitter.im/hiteshjoshi/node-stanford-corenlp.svg)](https://gitter.im/hiteshjoshi/node-stanford-corenlp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A simple node.js wrapper for Stanford CoreNLP.
 
